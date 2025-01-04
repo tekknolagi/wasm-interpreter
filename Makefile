@@ -1,5 +1,5 @@
 # Clang 15 and below have incomplete C++20 support.
-CXX = clang++-16
+CXX = clang++
 DEBUG := 0
 
 CFLAGS := -Wall -Wextra -Wpedantic -std=c++20 -Wno-attributes

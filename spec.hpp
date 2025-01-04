@@ -14,6 +14,7 @@ template <typename Err>
 
 template <typename Err>
 [[noreturn]] static void __attribute__((preserve_most)) error(std::string msg) {
+    // todo: check if forwarding args to `std::string` allows for nicer error messages in hot path errors (or just figure out other system to allow dynamic-ness
     throw Err(msg);
 }
 
